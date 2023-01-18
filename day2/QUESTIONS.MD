@@ -22,3 +22,28 @@
 - This subnet has 16 nodes  in it.
 
 ```
+
+3. I have a neuron with 1O ICPs locked with a dissolve delay of 4 years - my neuron has been locked for 2 years. What is my expected voting power?
+
+```diff 
+- Answer: 18.65 or 1.865 per ICP.
+```
+
+
+4. What is wrong with the following code?
+
+actor {
+  let n : Nat = 50;
+  let t : Text = "Hello";
+
+  public func convert_to_text(m : Nat) : async Text {
+    Nat.toText(m);
+  };
+ 
+}
+
+```diff 
+- Answer: it is missing the import statment to use the Nat_toText function
+- import Nat "mo:base/Nat";
+- if you put the above line above the actor then it will run
+```
