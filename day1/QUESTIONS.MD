@@ -29,4 +29,6 @@ actor {
 }
 
 
-<span style="color:red "> Answer: Text = 0; does not have the expected type for assignment. </span> 
+```diff 
+- Answer: Text = 0; does not have the expected type for assignment.
+```
