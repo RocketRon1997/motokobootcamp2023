@@ -1,5 +1,8 @@
 1. How much is the current memory capacity of a canister?
-Answer:  48GiB according to this tweet - https://twitter.com/DFINITYDev/status/1603818625529393156
+```diff 
+- Answer:  48GiB according to this tweet - https://twitter.com/DFINITYDev/status/1603818625529393156,
+- but it used to be 4GiB for a long time.
+```
 
 2. What is the issue with the following code sample?
 actor {
@@ -9,10 +12,10 @@ actor {
   };
 }
 
-
-Answer:  Using let to declare a new variable makes it immutable, so the re-assignment statement will produce an error, 
-"expected mutable assignment target"
-
+```diff 
+- Answer:  Using let to declare a new variable makes it immutable, so the re-assignment statement will produce an error, 
+- "expected mutable assignment target"
+```
 
 3. What is the issue with the following code sample?
 actor {
@@ -29,6 +32,12 @@ actor {
 }
 
 
-```diff 
+```diff  
 - Answer: Text = 0; does not have the expected type for assignment.
+```
+
+4. False or True: we can remove the keyword async for return argument of a query function since queries are faster to answer.
+
+```diff  
+- Answer: False - it still needs async as the time is still indefinite.
 ```
