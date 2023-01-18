@@ -14,7 +14,7 @@ Answer:  Using let to declare a new variable makes it immutable, so the re-assig
 "expected mutable assignment target"
 
 
-What is the issue with the following code sample?
+3. What is the issue with the following code sample?
 actor {
   var message : Text = 0;
 
@@ -29,4 +29,4 @@ actor {
 }
 
 
-Answer: Text = 0; does not have the expected type for assignment
+<span style="color:red "> Answer: Text = 0; does not have the expected type for assignment. </span> 
